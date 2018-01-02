@@ -1,65 +1,46 @@
-# code-snipper README
+# Code Snipper for VSCode
 
-This is the README for your extension "code-snipper". After writing up a brief description, we recommend including the following sections.
+This is an extension for [Code Snipper](https://github.com/abhisheksoni27/code-snipper) that creates images from code snippets from vscode.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+* Create an image from a file
+* Create an image from selected text
 
-For example if there is an image subfolder under your extension project workspace:
+```js
+const success = 'false';
+while(!success){
+    keepWorking();
+}
+```
 
-\!\[feature X\]\(images/feature-x.png\)
+![Output](images/output.png)
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
-
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+> TODO: Add animation
 
 ## Extension Settings
 
+Default settings:
+
+* `code-snipper.resolution: 1`
+* `code-snipper.theme: 'hybrid'`
+* `code-snipper.font: 'Source Code Pro'`
+* `code-snipper.fontSize: 20`
+
+**Available Themes**
+
+All the themes available in [hightlight.js](https://highlightjs.org/) can be used. The list can be found at [Themes.md](https://codeprose.me/code-snipper/themes.html)
+
+To check out how each theme looks, check this [Highlight.js demo](https://highlightjs.org/static/demo/)
 Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
 
 ## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
-
 ### 1.0.0
 
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
+Initial release
 
 -----------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on OSX or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on OSX or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (OSX) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
