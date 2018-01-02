@@ -1,0 +1,19 @@
+{
+  "name": "code-snipper-vscode",
+  "version": "1.0.0",
+  "description": "Code Snipper extension for Visual Studio Code",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robbieferrero/code-snipper.git"
+  },
+  "author": "Robbie Ferrero",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/robbieferrero/code-snipper/issues"
+  },
+  "homepage": "https://github.com/robbieferrero/code-snipper#readme"
+}
