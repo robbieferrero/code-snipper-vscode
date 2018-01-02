@@ -1,5 +1,5 @@
 {
-    "name": "code-snipper",
+    "name": "code-snipper-vscode",
     "displayName": "Code Snipper",
     "description": "Code Snipper for Visual Studio Code",
     "version": "0.0.1",
@@ -11,14 +11,19 @@
         "Other"
     ],
     "activationEvents": [
-        "onCommand:extension.sayHello"
+        "onCommand:extension.createImageFromFile",
+        "onCommand:extension.createImageFromSelection"
     ],
     "main": "./out/extension",
     "contributes": {
         "commands": [
             {
-                "command": "extension.sayHello",
-                "title": "Hello World"
+                "command": "extension.createImageFromFile",
+                "title": "Create image from file"
+            },
+            {
+                "command": "extension.createImageFromSelection",
+                "title": "Create image from selection"
             }
         ]
     },
@@ -34,5 +39,8 @@
         "vscode": "^1.1.6",
         "@types/node": "^7.0.43",
         "@types/mocha": "^2.2.42"
+    },
+    "dependencies": {
+        "code-snipper": "0.0.21"
     }
 }
