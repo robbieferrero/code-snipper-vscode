@@ -26,6 +26,7 @@ Default settings:
 * `code-snipper.theme: 'hybrid'`
 * `code-snipper.font: 'Source Code Pro'`
 * `code-snipper.fontSize: 20`
+* `code-snipper.background: #fff`
 
 **Available Themes**
 

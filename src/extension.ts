@@ -26,7 +26,8 @@ export function activate(context: vscode.ExtensionContext) {
             resolution: config.get('resolution'),
             theme: config.get('theme'),
             font: config.get('font'),
-            fontSize: config.get('fontSize')
+            fontSize: config.get('fontSize'),
+            background: config.get('background')
         };
 
         let result = copper(fileName, options);
