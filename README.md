@@ -5,7 +5,7 @@ This is an extension for [Code Snipper](https://github.com/abhisheksoni27/code-s
 ## Features
 
 * Create an image from a file
-* Create an image from selected text
+* ***Coming soon:*** Create an image from selected text
 
 ```js
 const success = 'false';
@@ -44,11 +44,12 @@ GraphicsMagick or ImageMagick are required for this extension to work.
     brew install graphicsmagick
     ```
 
-## Known Issues
-* No support yet for full file to png for long files. TODO.
-For now you can adjust the fontSize in the configuration settings
-* No support yet for output file overrides
-* No support yet for temporary file creation
+## Known Issues & TODOs
+* No support yet for full file to png for long files. For now you can adjust the fontSize in the configuration settings. 
+* No support yet for output filename overrides, currently defaults to the source file location
+* No support yet for temporary file creation, files must be saved to output png.
+* Selection-to-image is not yet implemented, just file for now
+
 
 ## Release Notes
 

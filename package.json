@@ -7,12 +7,15 @@
     "engines": {
         "vscode": "^1.19.0"
     },
+    "repository": {
+		"type": "git",
+		"url": "https://github.com/robbieferrero/code-snipper-vscode.git"
+	},
     "categories": [
         "Other"
     ],
     "activationEvents": [
-        "onCommand:extension.createImageFromFile",
-        "onCommand:extension.createImageFromSelection"
+        "onCommand:extension.createImageFromFile"
     ],
     "main": "./out/extension",
     "contributes": {
@@ -21,10 +24,6 @@
                 "command": "extension.createImageFromFile",
                 "title": "Create image from file"
             },
-            {
-                "command": "extension.createImageFromSelection",
-                "title": "Create image from selection"
-            }
         ],
         "configuration": {
             "type": "object",
