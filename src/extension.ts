@@ -2,6 +2,7 @@
 import * as vscode from 'vscode';
 import * as copper from 'code-snipper';
 import * as fs from 'fs';
+import * as path from 'path';
 
 export function activate(context: vscode.ExtensionContext) {
 
@@ -14,12 +15,14 @@ export function activate(context: vscode.ExtensionContext) {
             return;
         }
 
-        let fileName: string = editor.document.fileName;
+        let filePath: string = editor.document.fileName;
         // TODO: Add output filename support. Add temporary filename support
-        if (!fs.existsSync(fileName)) {
+        if (!fs.existsSync(filePath)) {
             vscode.window.showErrorMessage(`Current file path cannot be found. Please save your file if you have not and try again.`);
             return;
         }
+
+        const fileName: string = path.basename(filePath);
         
         const config: vscode.WorkspaceConfiguration = vscode.workspace.getConfiguration('code-snipper');
         let options: object = {
@@ -30,6 +33,7 @@ export function activate(context: vscode.ExtensionContext) {
             background: config.get('background')
         };
 
+        
         copper(fileName, options);
         
         vscode.window.setStatusBarMessage('Image created from file!', 1000);
