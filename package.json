@@ -2,8 +2,13 @@
     "name": "code-snipper-vscode",
     "displayName": "Code Snipper",
     "description": "Code Snipper for Visual Studio Code",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "publisher": "robbieferrero",
+    "author": "Robbie Ferrero",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/robbieferrero/code-snipper-vscode/issues"
+    },
     "engines": {
         "vscode": "^1.19.0"
     },
