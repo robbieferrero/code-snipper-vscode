@@ -34,8 +34,20 @@ All the themes available in [hightlight.js](https://highlightjs.org/) can be use
 To check out how each theme looks, check this [Highlight.js demo](https://highlightjs.org/static/demo/)
 Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
 
-## Known Issues
+## Requirements
+GraphicsMagick or ImageMagick are required for this extension to work. 
+* [Install for Windows](https://www.imagemagick.org/script/download.php)
+* **Install for Mac OS X**:
+    ```
+    brew install imagemagick
+    brew install graphicsmagick
+    ```
 
+## Known Issues
+* No support yet for full file to png for long files. TODO.
+For now you can adjust the fontSize in the configuration settings
+* No support yet for output file overrides
+* No support yet for temporary file creation
 
 ## Release Notes
 
