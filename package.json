@@ -14,6 +14,7 @@
     "categories": [
         "Other"
     ],
+    "icon": "images/icon.png",
     "activationEvents": [
         "onCommand:extension.createImageFromFile"
     ],
@@ -23,7 +24,7 @@
             {
                 "command": "extension.createImageFromFile",
                 "title": "Create image from file"
-            },
+            }
         ],
         "configuration": {
             "type": "object",

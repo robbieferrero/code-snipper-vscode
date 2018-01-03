@@ -33,7 +33,6 @@ Default settings:
 All the themes available in [hightlight.js](https://highlightjs.org/) can be used. The list can be found at [Themes.md](https://codeprose.me/code-snipper/themes.html)
 
 To check out how each theme looks, check this [Highlight.js demo](https://highlightjs.org/static/demo/)
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
 
 ## Requirements
 GraphicsMagick or ImageMagick are required for this extension to work. 
