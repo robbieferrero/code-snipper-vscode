@@ -20,8 +20,16 @@ export function activate(context: vscode.ExtensionContext) {
             vscode.window.showInformationMessage(`Current file path cannot be found. Please save your file if you have not and try again.`);
             return;
         }
-        // TODO: Add options
-        let result = copper(fileName);
+        
+        const config: vscode.WorkspaceConfiguration = vscode.workspace.getConfiguration('code-snipper');
+        let options: object = {
+            resolution: config.get('resolution'),
+            theme: config.get('theme'),
+            font: config.get('font'),
+            fontSize: config.get('fontSize')
+        };
+
+        let result = copper(fileName, options);
         
         vscode.window.setStatusBarMessage('Image created from file!', 1000);
     });

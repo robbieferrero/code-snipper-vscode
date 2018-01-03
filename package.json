@@ -25,7 +25,33 @@
                 "command": "extension.createImageFromSelection",
                 "title": "Create image from selection"
             }
-        ]
+        ],
+        "configuration": {
+            "type": "object",
+            "title": "Code Snipper configuration",
+            "properties": {
+                "code-snipper.resolution": {
+                    "type": "number",
+                    "default": 1,
+                    "description": "Sets resolution"
+                },
+                "code-snipper.theme": {
+                    "type": "string",
+                    "default": "hybrid",
+                    "description": "Sets the theme to use for PNG output. See [README.md] for a link to themes"
+                },
+                "code-snipper.font": {
+                    "type": "string",
+                    "default": "Source Code Pro",
+                    "description": "Sets the output font"
+                },
+                "code-snipper.fontSize": {
+                    "type": "number",
+                    "default": 20,
+                    "description": "Sets the default font size. Tip: If not all code output is present in image try adjusting this value"
+                }
+            }
+        }
     },
     "scripts": {
         "vscode:prepublish": "npm run compile",
